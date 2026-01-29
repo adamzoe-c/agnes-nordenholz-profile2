@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pants Collection | Agnes Nordenholz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ </head>
+ <body>
+    <header class="site-header">
+        <div class="controls">
+            <button class="control-btn" onclick="toggleFilter()">Filter <span id="filter-plus">+</span></button>
+            <div class="logo-placeholder">PANTS COLLECTION</div>
+            <div class="sort-wrapper">
+                <label>SORT BY</label>
+                <select class="sort-select">
+                    <option>Sort by latest</option>
+                    <option>Sort by high - low price</option>
+                    <option>Sort by low - high</option>
+                </select>
+            </div>
+        </div>
+        <div id="filter-menu" class="filter-dropdown">
+            <div class="filter-group">
+                <h4>By Color</h4>
+                <ul>
+                    <li>All</li><li>Black</li><li>Beige</li><li>Checkered</li><li>Blue</li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h4>By Material</h4>
+                <ul>
+                    <li>All</li><li>Wool</li><li>Linen</li><li>Silk</li><li>Cotton</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="image-box"><img src="pan1.jpg" alt="The Wedding suit"></div>
+                <h2 class="product-name">The Wedding suit</h2>
+                <p class="product-price">€ 2.950,00</p>
+            </div>
+            <div class="product-card">
+                <div class="image-box"><img src="pan2.jpg" alt="Suit Laury + Kara"></div>
+                <h2 class="product-name">Suit Laury + Kara</h2>
+                <p class="product-price">€ 2.800,00</p>
+            </div>
+            <div class="product-card">
+                <div class="image-box"><img src="pan3.jpg" alt="Suit Cecilia + Rahel"></div>
+                <h2 class="product-name">Suit Cecilia + Rahel</h2>
+                <p class="product-price">€ 2.800,00</p>
+            </div>
+            <div class="product-card">
+                <div class="image-box"><img src="pan4.jpg" alt="Tuxedo"></div>
+                <h2 class="product-name">Tuxedo</h2>
+                <p class="product-price">€ 2.950,00</p>
+            </div>
+            <div class="product-card">
+                <div class="image-box"><img src="pan5.jpg" alt="Short Emmeline"></div>
+                <h2 class="product-name">Short Emmeline</h2>
+                <p class="product-price">€ 320,00</p>
+            </div>
+        </div>
+        <section class="brand-details">
+            <div class="text-columns">
+                <div class="col">
+                    <h3>Pants and shorts for women</h3>
+                    <p>Unravel the essence of Berlin’s tailoring with our pants for women, meticulously crafted in Germany. And most important: we offer pants for women with working pockets! Why I mention the pockets? It’s a regular thing for
+ male customers, but the fashion industry often adds no pockets or not working pockets/ fake pockets to women’s wear, so it’s not adding volume.</p>
+                </div>
+                <div class="col">
+                    <h3>The Importance of Pockets</h3>
+                    <p>Which is obviously nonsense, because women need pockets as much as men! Our designs focus on functionality without compromising the silhouette. Experience the perfect blend of practical detail and high-end tailoring in
+ every piece of our collection.</p>
+                </div>
+            </div>
+            
+            <div class="logo-footer-section">
+                <img src="logo.png" alt="Agnes Nordenholz Logo" class="centered-logo">
+                <div class="social-legal-row">
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+                    <a href="#"><i class="far fa-envelope"></i> Newsletter</a>
+                    <span class="separator"></span>
+                    <a href="#">Legal Notice</a>
+                    <a href="#">AGB</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>©Copyright Agnes Nordenholz</p>
+    </footer>
+    <script>
+        function toggleFilter() {
+            var menu = document.getElementById("filter-menu");
+            var plusSign = document.getElementById("filter-plus");
+            if (menu.style.display === "flex") {
+                menu.style.display = "none";
+                plusSign.innerText = "+";
+            } else {
+                menu.style.display = "flex";
+                plusSign.innerText = "-";
+            }
+        }
+    </script>
+ </body>
+ </html>

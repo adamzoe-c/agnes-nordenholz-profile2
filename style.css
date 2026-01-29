@@ -1,0 +1,237 @@
+:root {--white: #fcfcfc;--off-white: #ffffff;--black: #1a1a1a;--grey: #555555;--soft-shadow: 0 10px 30px rgba(0,0,0,0.02);
+ }
+ body {
+ background-color: var(--white);
+ color: var(--black);
+ font-family: 'Inter', sans-serif;
+ margin: 0;
+ line-height: 1.8;
+ }
+ /* Navbar */
+ .navbar { display: flex; justify-content: center; padding: 40px 0; background: var(--white); position: sticky; top: 0; z-index: 100; }
+ .header-inner { display: flex; align-items: center; justify-content: space-between; width: 94%; max-width: 1600px; }
+ .nav-group { display: flex; align-items: center; gap: 35px; flex: 1; }
+ .nav-group.right { justify-content: flex-end; }
+ .main-logo { height: 70px; }
+ .nav-group a, .lang { text-decoration: none; color: var(--black); font-size: 12px; letter-spacing: 2px; }
+ .cart-icon { 
+height: 18px; 
+width: auto; 
+cursor: pointer; 
+margin-left: 15px;
+ vertical-align: middle;
+ }
+ .hamburger-menu span { display: block; width: 25px; height: 1px; background-color: var(--black); margin-bottom: 6px; }
+ /* Titles */
+ .italic-title { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: 26px; text-align: center; margin-bottom:
+ 50px; }
+ .classic-title { font-family: 'Playfair Display', serif; font-weight: 400; font-size: 32px; margin-bottom: 25px; line-height: 1.2; }
+ /* Hero Section */
+ .hero { padding: 40px 5% 80px; }
+ .hero-content { display: flex; align-items: center; justify-content: center; position: relative; }
+ .hero-card { padding: 60px 80px; background: var(--off-white); z-index: 2; margin-right: -100px; box-shadow: var(--soft-shadow); }
+ .hero-card h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; margin: 0; font-weight: 400; }
+ .hero-image-wrapper img { width: 400px; height: 550px; object-fit: cover; }
+ /* Carousel */
+ .collections { padding: 60px 5%; }
+ .carousel-container { position: relative; display: flex; align-items: center; }
+ .carousel { display: flex; gap: 25px; overflow-x: auto; padding-bottom: 30px; scroll-behavior: smooth; width: 100%; }
+ .carousel::-webkit-scrollbar { display: none; }
+ .item { flex: 0 0 auto; width: 200px; text-decoration: none; color: inherit; }
+ .item img { width: 100%; height: 280px; object-fit: cover; margin-bottom: 15px; }
+ .item span { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; }
+ .nav-arrow { background: none; border: none; font-size: 50px; cursor: pointer; color: #ccc; transition: color 0.3s; }
+ .nav-arrow:hover { color: var(--black); }
+ /* Centered New Collection */
+ .centered-carousel { justify-content: center; }
+ /* Spacing Fixes */
+ .content-block { padding: 80px 10%; }
+ .editorial-push, .philosophy-push { margin-top: 40px; }
+ .block-grid { display: flex; align-items: flex-start; gap: 80px; }
+ .block-image { flex: 0 0 25%; }
+ .block-text { flex: 1; text-align: left; }
+ .block-image img { width: 100%; height: auto; max-height: 400px; object-fit: cover; box-shadow: var(--soft-shadow); }
+ .block-text p { font-size: 16px; color: var(--grey); margin-bottom: 25px; max-width: 800px; }
+ .btn-link { display: inline-block; color: var(--black); font-size: 11px; text-decoration: none; border-bottom: 1px solid var(--black);
+ padding-bottom: 5px; }
+ /* Side Menu */
+ .side-nav { height: 100%; width: 0; position: fixed; z-index: 2000; top: 0; left: 0; background-color: var(--white); overflow-x: hidden;
+ transition: 0.5s; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+ .side-nav-content a { padding: 10px; text-decoration: none; font-size: 2rem; font-family: 'Playfair Display', serif; color: var(--black); }
+ .side-nav .closebtn { position: absolute; top: 30px; left: 5%; font-size: 40px; text-decoration: none; color: var(--black); }
+ /* Footer - FONT FIX HERE */
+ footer { padding: 80px 5% 60px; text-align: center; border-top: 1px solid #eeeeee; margin-top: 50px; }
+ .footer-logo { height: 40px; margin-bottom: 30px; }
+ .social-links a, .footer-meta { 
+font-size: 10px; 
+text-decoration: none; 
+color: var(--grey); 
+letter-spacing: 1.5px; 
+font-family: 'Inter', sans-serif;
+ font-weight: 400;
+ }
+ .social-links a { margin: 0 20px; }
+ .footer-meta { margin-top: 50px; display: block; opacity: 0.8; }
+ /* Mobile */
+ @media (max-width: 900px) {
+ .block-grid { flex-direction: column; align-items: center; text-align: center; }
+ .block-image { flex: 0 0 100%; width: 80%; }
+ .hero-card { margin-right: 0; padding: 40px; width: 80%; }
+ .centered-carousel { justify-content: flex-start; overflow-x: auto; }
+ }
+
+ body {
+    margin: 0;
+    padding: 0 50px;
+    background-color: #fff;
+    color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+ }
+ .site-header {
+    padding: 30px 0;
+    border-bottom: 1px solid #f2f2f2;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+ }
+ .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .logo-placeholder {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+ }
+ .control-btn {
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    cursor: pointer;
+ }
+ .filter-dropdown {
+    display: none;
+    padding: 30px 0;
+    border-top: 1px solid #f9f9f9;
+    gap: 100px;
+ }
+ .filter-group h4 {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #999;
+ }
+ .filter-group ul {
+    list-style: none;
+    padding: 0;
+ }
+ .filter-group ul li {
+    font-size: 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+ }
+ /* --- Fixed Size Image Box --- */
+ .image-box {
+    background-color: #fcfcfc;
+    width: 100%;
+    aspect-ratio: 2 / 3; /* Forces uniform size across all items */
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+ }
+ .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Secret to making different sized photos look the same */
+    object-position: center;
+    transition: transform 0.5s ease;
+ }
+ .image-box:hover img {
+    transform: scale(1.03);
+ }
+ /* --- Product Grid --- */
+ .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 25px;
+    padding: 60px 0;
+    max-width: 1300px;
+    margin: 0 auto;
+ }
+ .product-card { text-align: center; }
+ .product-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0;
+ }
+ .product-price { font-size: 11px; color: #777; margin-top: 5px; }
+ /* Brand Details */
+ .brand-details {
+    max-width: 1200px;
+    margin: 80px auto 40px;
+    border-top: 1px solid #f2f2f2;
+    padding-top: 60px;
+ }
+ .text-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    text-align: left;
+ }
+ .col h3 { font-family: 'Playfair Display', serif; font-size: 14px; text-transform: uppercase; margin-bottom: 20px; }
+ .col p { font-size: 13px; line-height: 1.8; color: #444; margin-bottom: 30px; }
+ /* Footer Section */
+ .logo-footer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+ }
+ .centered-logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: 30px;
+ }
+ .social-legal-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+ }
+ .social-legal-row a {
+    text-decoration: none;
+    color: #333;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+ }
+ .separator { width: 1px; height: 12px; background-color: #ddd; }
+ .site-footer {
+    padding: 40px 0 60px;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #bbb;
+    text-transform: uppercase;
+ }
+ @media (max-width: 900px) {
+    .product-grid { grid-template-columns: repeat(2, 1fr); }
+    .text-columns { grid-template-columns: 1fr; }
+    .separator { display: none; }
+ }
+
+ 

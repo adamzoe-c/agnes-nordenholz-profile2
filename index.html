@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGNES NORDENHOLZ | Slow Luxury</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <div id="sideMenu" class="side-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="side-nav-content">
+            <a href="#" onclick="closeNav()">JOURNAL</a>
+            <a href="#" onclick="closeNav()">WEDDING SUIT</a>
+            <a href="#" onclick="closeNav()">COLLECTIONS</a>
+            <a href="#" onclick="closeNav()">PHILOSOPHY</a>
+            <a href="#" onclick="closeNav()">SUSTAINABILITY</a>
+        </div>
+    </div>
+    <header class="navbar">
+        <div class="header-inner">
+            <nav class="nav-group left">
+                <div class="hamburger-container" onclick="openNav()">
+                    <div class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <a href="#">ABOUT AGNES</a>
+                <a href="#">CONTACT</a>
+            </nav>
+            <div class="logo-wrap">
+                <img src="Logo.png" alt="Agnes Nordenholz Logo" class="main-logo">
+            </div>
+            <nav class="nav-group right">
+                <a href="#">NEWSLETTER</a>
+                <span class="lang">DE/EN</span>
+                <img src="shopping icon.png" alt="Cart" class="cart-icon">
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-card">
+                    <h1>Agnes Nordenholz</h1>
+                    <p class="subtitle">Established in Berlin</p>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="FIRST.jpg" alt="Featured" class="hero-img">
+                </div>
+            </div>
+        </section>
+        <section class="collections">
+            <h2 class="italic-title">View the collections</h2>
+            <div class="carousel-container">
+                <button class="nav-arrow prev-arrow" onclick="scrollCarousel(-1)">&lsaquo;</button>
+                <div class="carousel" id="collectionCarousel">
+                    <a href="#" class="item"><img src="Coats.jpg" alt="Coats"><span>Coats</span></a>
+                    <a href="#" class="item"><img src="Bags.jpg" alt="Bags"><span>Bags</span></a>
+                    <a href="#" class="item"><img src="Accessories.jpg" alt="Accessories"><span>Accessories</span></a>
+                    <a href="#" class="item"><img src="Interior.jpg" alt="Interior"><span>Interior</span></a>
+                    <a href="#" class="item"><img src="Jewelleries.jpg" alt="Jewelleries"><span>Jewelleries</span></a>
+                    <a href="#" class="item"><img src="Jackets.jpg" alt="Jackets"><span>Jackets</span></a>
+                    <a href="#" class="item"><img src="Dresses.jpg" alt="Dresses"><span>Dresses</span></a>
+                    <a href="#" class="item"><img src="Pants.jpg" alt="Pants"><span>Pants</span></a>
+                    <a href="#" class="item"><img src="Tops.jpg" alt="Tops"><span>Tops</span></a>
+                </div>
+                <button class="nav-arrow next-arrow" onclick="scrollCarousel(1)">&rsaquo;</button>
+            </div>
+        </section>
+        <section class="content-block editorial-push">
+            <div class="block-grid">
+                <div class="block-image">
+                    <img src="Annapic.jpg" alt="Anna Wendt">
+                </div>
+                <div class="block-text">
+                    <h3 class="classic-title">A conversation with Anna Wendt, film producer</h3>
+                    <p>When I first met Anna, we immediately connected through our shared concern for our mother, who needed care. At that time, we were both intensely focused on organizing her care,
+ confronted with dementia in all its facets, bureaucracy with health insurance companies and authorities, absurd everyday situations, and emotional exhaustion.</p>
+                    <p>We talked about responsibility and grief, guilt, and the struggle not only for our mothers but also for our own livelihoods.</p>
+                    <a href="#" class="btn-link">Read more</a>
+                </div>
+            </div>
+        </section>
+        <section class="collections">
+            <h2 class="italic-title">New collection</h2>
+            <div class="carousel centered-carousel">
+                <div class="item"><img src="P3.jpg" alt="Product 3"></div>
+                <div class="item"><img src="P4.jpg" alt="Product 4"></div>
+                <div class="item"><img src="P5.jpg" alt="Product 5"></div>
+                <div class="item"><img src="P6.jpg" alt="Product 6"></div>
+                <div class="item"><img src="P7.jpg" alt="Product 7"></div>
+                <div class="item"><img src="P8.jpg" alt="Product 8"></div>
+            </div>
+        </section>
+        <section class="content-block philosophy-push">
+            <div class="block-grid">
+                <div class="block-image">
+                    <img src="Agnesimage.jpg" alt="Philosophy">
+                </div>
+                <div class="block-text">
+                    <h3 class="classic-title">The philosophy of Agnes Nordenholz</h3>
+                    <p>AGNES NORDENHOLZ is a slow luxury label founded in Berlin in 2015. Agnes Schorer is the creative mind behind the brand. Our goal is to create products with "soul" that can withstand
+ the fast-paced society of our time.</p>
+                    <p>By choosing traditional craftsmanship and high-quality materials processed in Europe according to ethical guidelines, we ensure every product holds lasting value.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="Logo.png" alt="Logo" class="footer-logo">
+        <div class="social-links">
+            <a href="#">INSTAGRAM</a>
+            <a href="#">FACEBOOK</a>
+            <a href="#">TIKTOK</a>
+            <a href="#">LEGAL NOTICE</a>
+            <a href="#">AGB</a>
+        </div>
+        <div class="footer-meta">
+        <span>© COPYRIGHT AGNES NORDENHOLZ</span>
+        </div>
+    </footer>
+    <script>
+        function openNav() { document.getElementById("sideMenu").style.width = "100%"; }
+        function closeNav() { document.getElementById("sideMenu").style.width = "0"; }
+        function scrollCarousel(direction) {
+            const carousel = document.getElementById('collectionCarousel');
+            carousel.scrollBy({ left: 300 * direction, behavior: 'smooth' });
+        }
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tops Collection | Agnes Nordenholz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ </head>
+ <body>
+    <header class="site-header">
+        <div class="controls">
+            <button class="control-btn" onclick="toggleFilter()">Filter <span id="filter-plus">+</span></button>
+            <div class="logo-placeholder">TOPS COLLECTION</div>
+            <div class="sort-wrapper">
+                <label>SORT BY</label>
+                <select class="sort-select">
+                    <option>Sort by latest</option>
+                    <option>Sort by high - low price</option>
+                    <option>Sort by low - high</option>
+                </select>
+            </div>
+        </div>
+        <div id="filter-menu" class="filter-dropdown">
+            <div class="filter-group">
+                <h4>By Color</h4>
+                <ul>
+                    <li>All</li><li>White</li><li>Blue</li><li>Black</li><li>Beige</li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h4>By Material</h4>
+                <ul>
+                    <li>All</li><li>Linen</li><li>Silk</li><li>Cotton</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="image-box"><img src="top1.jpg" alt="Silk Blouse Florence"></div>
+                <h2 class="product-name">Silk Blouse Florence</h2>
+                <p class="product-price">€ 490,00</p>
+            </div>
+            <div class="product-card">
+                <div class="image-box"><img src="top2.jpg" alt="Linen Shirt Greta"></div>
+                <h2 class="product-name">Linen Shirt Greta</h2>
+                <p class="product-price">€ 340,00</p>
+            </div>
+            <div class="product-card">
+                <div class="image-box"><img src="top3.jpg" alt="Linen Shirt Grit"></div>
+                <h2 class="product-name">Linen Shirt Grit</h2>
+                <p class="product-price">€ 280,00</p>
+            </div>
+            <div class="product-card">
+                <div class="image-box"><img src="top4.jpg" alt="Linen Shirt Ava"></div>
+                <h2 class="product-name">Linen Shirt Ava</h2>
+                <p class="product-price">€ 280,00</p>
+            </div>
+        </div>
+        <section class="brand-details">
+            <div class="text-columns">
+                <div class="col">
+                    <h3>Tops and shirts for women</h3>
+                    <p>Discover our tops, shirts and elegant blouses for women, made from the finest materials, sourced in Europe to ensure quality and impeccable design. Our shirts for women are available in regular sizes or Made to Measure.
+ Embrace the urban chic and effortless style of our locally made tops, designed to elevate your wardrobe with versatility and sustainability in mind.</p>
+                </div>
+                <div class="col">
+                    <h3>Berlin’s Heritage & Finest Fabrics</h3>
+                    <p>Step into the world of Berlin’s heritage, where tradition meets modernity in every thread. If you are looking for a sophisticated linen shirt, a luxurious silk blouse or an elegant tuxedo shirt for women: we got you covered. You
+ can choose from a wide selection of finest fabrics from the best weavers from Italy, France or United Kingdom.</p>
+                </div>
+            </div>
+            
+            <div class="logo-footer-section">
+                <img src="Logo.png" alt="Agnes Nordenholz Logo" class="centered-logo">
+                <div class="social-legal-row">
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+                    <a href="#"><i class="far fa-envelope"></i> Newsletter</a>
+                    <span class="separator"></span>
+                    <a href="#">Legal Notice</a>
+                    <a href="#">AGB</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>©Copyright Agnes Nordenholz</p>
+    </footer>
+    <script>
+        function toggleFilter() {
+            var menu = document.getElementById("filter-menu");
+            var plusSign = document.getElementById("filter-plus");
+            if (menu.style.display === "flex") {
+                menu.style.display = "none";
+                plusSign.innerText = "+";
+            } else {
+                menu.style.display = "flex";
+                plusSign.innerText = "-";
+            }
+        }
+    </script>
+ </body>
+ </html>

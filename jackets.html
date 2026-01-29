@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackets Collection | Agnes Nordenholz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ </head>
+ <body>
+    <header class="site-header">
+        <div class="controls">
+            <button class="control-btn" onclick="toggleFilter()">Filter <span id="filter-plus">+</span></button>
+            <div class="logo-placeholder">JACKETS COLLECTION</div>
+            <div class="sort-wrapper">
+                <label>SORT BY</label>
+                <select class="sort-select">
+                    <option>Sort by latest</option>
+                    <option>Sort by high - low price</option>
+                    <option>Sort by low - high</option>
+                </select>
+            </div>
+        </div>
+        <div id="filter-menu" class="filter-dropdown">
+            <div class="filter-group">
+                <h4>By Color</h4>
+                <ul>
+                    <li>All</li><li>Blue</li><li>Black</li><li>Beige</li><li>Apricot</li><li>Beige-brown</li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h4>By Material</h4>
+                <ul>
+                    <li>All</li><li>Cotton</li><li>Silk</li><li>Sheep fur</li><li>Leather</li><li>Linen</li><li>Loden</li><li>Wool</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="product-grid">
+            <div class="product-card"><div class="image-box"><img src="picture1.jpg"></div><h2 class="product-name">The Wedding suit</h2><p class="product-price">€ 2.950,00</p></div>
+            <div class="product-card"><div class="image-box"><img src="picture2.jpg"></div><h2 class="product-name">Suit Laury + Kara</h2><p class="product-price">€ 2.800,00</p></div>
+            <div class="product-card"><div class="image-box"><img src="picture3.jpg"></div><h2 class="product-name">Suit Cecilia + Rahel</h2><p class="product-price">€ 2.800,00</p></div>
+            <div class="product-card"><div class="image-box"><img src="picture4.jpg"></div><h2 class="product-name">Cecilia DB Jacket</h2><p class="product-price">€ 2.200,00</p></div>
+            
+            <div class="product-card featured-item">
+                <div class="image-box"><img src="picture5.jpg"></div>
+                <div class="featured-text">
+                    <h2 class="product-name">Tuxedo</h2>
+                    <p class="product-price">€ 2.950,00</p>
+                    <p class="editorial-note">Essential Evening Wear</p>
+                </div>
+            </div>
+        </div>
+        <section class="brand-details">
+            <div class="text-columns">
+                <div class="col">
+                    <h3>Tailored Jackets for Women</h3>
+                    <p>A Tailored jacket for women is an essential piece for any woman’s wardrobe. Its versatility instantly elevates any ensemble. Explore our selection of women’s jackets crafted from premium European fabrics, ensuring both style
+ and quality.</p>
+                </div>
+                <div class="col">
+                    <h3>CRAFTSMANSHIP & DESIGN</h3>
+                    <p>Each jacket is a testament to timeless elegance and superior tailoring. Designed with the modern woman in mind, our collection focuses on silhouette, structure, and the tactile beauty of high-end materials.</p>
+                </div>
+            </div>
+            
+            <div class="logo-footer-section">
+                <img src="Logo.png" alt="Agnes Nordenholz Logo" class="centered-logo">
+                <div class="social-legal-row">
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+                    <a href="#"><i class="far fa-envelope"></i> Newsletter</a>
+                    <span class="separator"></span>
+                    <a href="#">Legal Notice</a>
+                    <a href="#">AGB</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>©Copyright Agnes Nordenholz</p>
+    </footer>
+    <script>
+        function toggleFilter() {
+            var menu = document.getElementById("filter-menu");
+            var plusSign = document.getElementById("filter-plus");
+            if (menu.style.display === "flex") {
+                menu.style.display = "none";
+                plusSign.innerText = "+";
+            } else {
+                menu.style.display = "flex";
+                plusSign.innerText = "-";
+            }
+        }
+    </script>
+ </body>
+ </html>
